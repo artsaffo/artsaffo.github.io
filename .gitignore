@@ -1,0 +1,7 @@
+# Not part of the published website (stay on this PC only)
+editor/
+PLAN.md
+__pycache__/
+.pytest_cache/
+*.tmp
+.claude/

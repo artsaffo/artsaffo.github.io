@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Arthur Saffo · Real-Time VFX Artist</title>
+  <meta name="description" content="Arthur Saffo, real-time VFX artist for games. Effects for the Gods of Smite 2 at Titan Forge, plus Divine Knockout, Ultraball and more. UE5 Niagara, Houdini, Substance Designer.">
+  <meta property="og:title" content="Arthur Saffo · Real-Time VFX Artist">
+  <meta property="og:description" content="Real-time VFX for games: Smite 2, Divine Knockout and more.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#07080b">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;800&family=Barlow:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="home">
+  <a class="skip" href="#main">Skip to content</a>
+
+  <canvas class="embers" aria-hidden="true"></canvas>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="wordmark" href="index.html"><span class="orb" aria-hidden="true"></span>Arthur Saffo</a>
+      <nav aria-label="Main">
+        <ul class="nav">
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="more-projects.html">More Projects</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="intro-title">
+      <div class="hero-media" data-hero aria-hidden="true"></div>
+      <div class="wrap hero-inner">
+        <p class="kicker"><span class="orb" aria-hidden="true"></span><span data-field="role">Real-Time VFX Artist</span></p>
+        <h1 id="intro-title" class="hero-name" data-name>Arthur<br>Saffo</h1>
+        <ul class="stats" data-list="stats" aria-label="At a glance"></ul>
+        <p class="hero-actions">
+          <a class="btn btn--glow" href="#reel">Watch the reel</a>
+          <a class="btn" href="#contact">Get in touch</a>
+        </p>
+      </div>
+      <p class="hero-caption wrap" data-hero-caption></p>
+    </section>
+
+    <section class="section reel wrap" id="reel" data-section="reel" aria-labelledby="reel-title">
+      <header class="section-head">
+        <p class="section-num" aria-hidden="true">01</p>
+        <h2 id="reel-title">Reel</h2>
+      </header>
+      <div class="reel-slot" data-reel></div>
+    </section>
+
+    <section class="section work wrap" data-section="work" aria-labelledby="work-title">
+      <header class="section-head">
+        <p class="section-num" aria-hidden="true">02</p>
+        <h2 id="work-title">Selected Work</h2>
+        <a class="more" href="more-projects.html">More projects →</a>
+      </header>
+      <div class="grid" data-list="featured"></div>
+    </section>
+
+    <section class="section credits wrap" data-section="credits" aria-labelledby="credits-title">
+      <header class="section-head">
+        <p class="section-num" aria-hidden="true">03</p>
+        <h2 id="credits-title">Shipped Titles</h2>
+      </header>
+      <ol class="titles" data-list="credits"></ol>
+      <h3 class="toolkit-title">Toolkit</h3>
+      <ul class="toolkit" data-list="toolkit"></ul>
+    </section>
+
+    <section class="section about wrap" data-section="about" aria-labelledby="about-title">
+      <header class="section-head">
+        <p class="section-num" aria-hidden="true">04</p>
+        <h2 id="about-title">About</h2>
+      </header>
+      <p class="about-text" data-field="about"></p>
+      <p class="education" data-field="education"></p>
+      <a class="more" href="about.html">More about me and my resume →</a>
+    </section>
+
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <div class="wrap">
+        <p class="kicker"><span class="orb" aria-hidden="true"></span>Contact</p>
+        <h2 id="contact-title" class="contact-title" data-field="contact-title">Let's make something glow.</h2>
+        <p class="email-line">
+          <span data-email>artsaffo (at) gmail (dot) com</span>
+        </p>
+        <ul class="link-list" data-list="links"></ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer wrap">
+    <p>© <span data-year>2026</span> Arthur Saffo</p>
+  </footer>
+
+  <noscript><p class="noscript wrap">The project list needs JavaScript to show. You can also find my work on <a href="https://artoriouss.artstation.com/">ArtStation</a>.</p></noscript>
+
+  <script src="data/projects.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/embers.js" defer></script>
+</body>
+</html>
