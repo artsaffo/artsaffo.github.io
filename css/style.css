@@ -103,15 +103,19 @@ main, .site-footer, .noscript { position: relative; z-index: 1; }
 
 .site-header {
   position: fixed; top: 0; left: 0; right: 0; z-index: 20;
-  background: linear-gradient(to bottom, rgba(7, 8, 11, 0.85), rgba(7, 8, 11, 0));
-  transition: background-color 0.3s ease, border-color 0.3s ease;
-  border-bottom: 1px solid transparent;
+  background: linear-gradient(to bottom, rgba(7, 8, 11, 0.85), rgba(7, 8, 11, 0)) no-repeat;
 }
-.site-header.is-scrolled {
-  background-color: rgba(7, 8, 11, 0.86);
-  -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px);
-  border-bottom-color: var(--line);
+/* Once scrolled: a darker, blurred shade that fades out downwards. No solid strip
+   and no line under it, so the header never reads as a bar across the page. */
+.site-header::before {
+  content: ""; position: absolute; top: 0; left: 0; right: 0; height: 170%; z-index: -1;
+  pointer-events: none; opacity: 0; transition: opacity 0.3s ease;
+  background: linear-gradient(to bottom, rgba(7, 8, 11, 0.9), rgba(7, 8, 11, 0.6) 55%, rgba(7, 8, 11, 0));
+  -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px);
+  -webkit-mask-image: linear-gradient(to bottom, #000 45%, transparent);
+  mask-image: linear-gradient(to bottom, #000 45%, transparent);
 }
+.site-header.is-scrolled::before { opacity: 1; }
 .header-inner {
   display: flex; align-items: center; justify-content: space-between; gap: 12px;
   min-height: 60px;
