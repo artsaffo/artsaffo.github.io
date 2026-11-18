@@ -140,7 +140,7 @@ main, .site-footer, .noscript { position: relative; z-index: 1; }
   .nav { gap: 12px; }
   .nav a { font-size: 0.82rem; letter-spacing: 0.08em; }
 }
-@media (max-width: 350px) {
+@media (max-width: 540px) {
   .header-inner { flex-wrap: wrap; justify-content: center; padding-block: 8px; }
 }
 

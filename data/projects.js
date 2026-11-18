@@ -436,6 +436,10 @@ window.SITE = {
       "href": "more-projects.html"
     },
     {
+      "label": "VoidDrag",
+      "href": "https://artsaffo.net/voiddrag/"
+    },
+    {
       "label": "About",
       "href": "about.html"
     }
